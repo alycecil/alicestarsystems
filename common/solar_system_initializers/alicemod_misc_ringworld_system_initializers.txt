@@ -1,0 +1,2979 @@
+
+@base_moon_distance = 10
+
+# Basic 1
+hyperrelay_alicemod_basic_init_01 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 20
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 2 max = 10 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+
+		spawn_megastructure = {
+		    type = "hyper_relay_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+hyperrelay_alicemod_basic_init_01_ringworld = {
+    class = "rl_standard_stars"
+    flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 10
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 0
+    }
+
+    change_orbit = 45
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_I"
+        orbit_angle = -30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_I"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 2 max = 10 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+
+		spawn_megastructure = {
+		    type = "hyper_relay_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+hyperrelay_alicemod_basic_init_01_ringworld_alt = {
+    class = "rl_standard_stars"
+    flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 10
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 0
+    }
+
+    change_orbit = 45
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_I"
+        orbit_angle = -30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_I"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 2 max = 10 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+
+	planet = {
+		class = pc_rare_crystal_asteroid
+		orbit_distance = { min = 0 max = 1 }
+		orbit_angle = { min = 10 max = 36 }
+		size = { min = 1 max = @asteroid_min_size }
+
+		init_effect = {
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = 0
+				}
+			}
+			random_list = {
+                 15 = {
+                     add_deposit = d_volatile_motes_1
+                 }
+                 15 = {
+                     add_deposit = d_exotic_gases_1
+                 }
+                 15 = {
+                     add_deposit = d_exotic_gases_2
+                 }
+                 15 = {
+                     add_deposit = d_volatile_motes_2
+                 }
+                 20 = {
+                     add_deposit = d_rare_crystals_3
+                 }
+                 10 = {
+                     add_deposit = d_rare_crystals_2
+                 }
+                 10 = {
+                     add_deposit = d_rare_crystals_1
+                 }
+                 1 = { add_deposit = d_living_metal_deposit  }
+                 1 = { add_deposit = d_zro_deposit_1 }
+             }
+		}
+
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+
+		spawn_megastructure = {
+		    type = "hyper_relay_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 2
+hyperrelay_alicemod_basic_init_02 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+	usage = misc_system_init
+	usage_odds = 20
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 30
+
+	planet = {
+		count = 2
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 25
+
+	planet = {
+		count = { min = 1 max = 4 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 2 max = 5 }
+		orbit_distance = 25
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+
+		spawn_megastructure = {
+		    type = "hyper_relay_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 2
+hyperrelay_alicemod_basic_init_02_ringworld = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+	usage = misc_system_init
+	usage_odds = 10
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 0
+    }
+
+    change_orbit = 45
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_I"
+        orbit_angle = -30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_I"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+	change_orbit = 30
+
+	planet = {
+		count = 2
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 25
+
+	planet = {
+		count = { min = 1 max = 4 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 2 max = 5 }
+		orbit_distance = 25
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+        
+		spawn_megastructure = { 
+		    type = "hyper_relay_ruined" 
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 3
+hyperrelay_alicemod_basic_init_03 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 10
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+    change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+	change_orbit = 45
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = 10
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = 60
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 4 }
+			size = { min = 8 max = 20 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 6
+		}
+	}
+
+	change_orbit = 20
+
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+        
+		spawn_megastructure = { 
+		    type = "hyper_relay_ruined" 
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 4
+hyperrelay_alicemod_basic_init_04 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 165
+	}
+
+	usage = misc_system_init
+	usage_odds = 10
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 120
+
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = -80
+
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 80
+
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+        
+		spawn_megastructure = { 
+		    type = "hyper_relay_ruined" 
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 5
+hyperrelay_alicemod_basic_init_05 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 130
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 240
+	}
+
+	usage = misc_system_init
+	usage_odds = 6
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 85
+
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 70 max = 120 }
+	}
+
+	change_orbit = 110
+
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 70 max = 120 } #{ min = 90 max = 270 }
+	}
+
+	change_orbit = -210
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+        
+		spawn_megastructure = { 
+		    type = "hyper_relay_ruined" 
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 6
+hyperrelay_alicemod_basic_init_06 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 130
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 240
+	}
+
+	usage = misc_system_init
+	usage_odds = 4
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 85
+
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 70 max = 120 }
+	}
+
+	change_orbit = 110
+
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 70 max = 120 } #{ min = 90 max = 270 }
+	}
+
+	change_orbit = -210
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+        
+		spawn_megastructure = { 
+		    type = "hyper_relay_ruined" 
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Asteroid System
+hyperrelay_alicemod_asteroid_init_01 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 60
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 120
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 180
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 240
+	}
+
+	usage = misc_system_init
+	usage_odds = 12
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 15
+
+	planet = {
+		count = { min = 1 max = 2 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 60
+
+	planet = {
+		count = { min = 2 max = 3 }
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 60
+
+	planet = {
+		count = { min = 3 max = 4 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 60
+
+	planet = {
+		count = { min = 4 max = 5 }
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+        
+		spawn_megastructure = { 
+		    type = "hyper_relay_ruined" 
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Binary 1
+hyperrelay_alicemod_binary_init_01 = {
+	class = "rl_binary_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 6
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 25
+		orbit_angle = 0
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 2 max = 10 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+        
+		spawn_megastructure = { 
+		    type = "hyper_relay_ruined" 
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Binary 2
+hyperrelay_alicemod_binary_init_02 = {
+	class = "rl_binary_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 4
+
+	#inner_radius_offset = 200
+	#outer_radius_offset = 220
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 30 max = 35 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 240
+		orbit_angle = { min = 0 max = 360 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		satellite_naming_policy = upper_case_roman_numerals
+
+		change_orbit = 25
+
+		 planet = {
+			count = { min = 2 max = 3 }
+			class = rl_unhabitable_planets
+			size = { min = 14 max = 24 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 25
+			satellite_naming_policy = lower_case_latin_letters
+
+			change_orbit = @base_moon_distance
+
+			moon = {
+				count = { min = 0 max = 1 }
+				orbit_angle = { min = 90 max = 270 }
+				orbit_distance = 3
+			}
+		}
+	}
+
+	change_orbit = -195
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+    change_orbit = 20
+
+	planet = {
+		count = { min = 3 max = 5 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 3
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+        
+		spawn_megastructure = { 
+		    type = "hyper_relay_ruined" 
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Trinary 1
+hyperrelay_alicemod_trinary_init_01 = {
+	class = "rl_trinary_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 3
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 25
+		orbit_angle = 0
+		size = { min = 25 max = 30 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = { min = 0 max = 20 }
+		orbit_angle = 120
+		size = { min = 25 max = 30 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = { min = 0 max = 20 }
+		orbit_angle = 120
+		size = { min = 25 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 20
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 2 max = 10 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+        
+		spawn_megastructure = { 
+		    type = "hyper_relay_ruined" 
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Trinary 2
+hyperrelay_alicemod_trinary_init_02 = {
+	class = "rl_trinary_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 3
+
+	#inner_radius_offset = 200
+	#outer_radius_offset = 220
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 30 max = 35 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 220
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 20 max = 30 }
+		has_ring = no
+		satellite_naming_policy = upper_case_roman_numerals
+
+		change_orbit = 30
+
+		planet = {
+			count = { min = 2 max = 4 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 25
+			satellite_naming_policy = lower_case_latin_letters
+
+			change_orbit = @base_moon_distance
+
+			moon = {
+				count = { min = 0 max = 1 }
+				orbit_angle = { min = 90 max = 270 }
+				orbit_distance = 3
+			}
+		}
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+		satellite_naming_policy = upper_case_roman_numerals
+
+		change_orbit = 25
+
+		planet = {
+			count = { min = 1 max = 4 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 25
+			satellite_naming_policy = lower_case_latin_letters
+
+			change_orbit = @base_moon_distance
+
+			moon = {
+				count = { min = 0 max = 1 }
+				orbit_angle = { min = 90 max = 270 }
+				orbit_distance = 3
+			}
+		}
+	}
+
+	change_orbit = -175
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	planet = {
+		count = { min = 3 max = 4 }
+		orbit_distance = 15
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 3
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+        
+		spawn_megastructure = { 
+		    type = "hyper_relay_ruined" 
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+
+@base_moon_distance = 10
+
+# Basic 1
+alicemod_basic_init_01 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 20
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 2 max = 10 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+alicemod_basic_init_01_ringworld = {
+    class = "rl_standard_stars"
+    flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 10
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 0
+    }
+
+    change_orbit = 45
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_I"
+        orbit_angle = -30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_I"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 2 max = 10 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+alicemod_basic_init_01_ringworld_alt = {
+    class = "rl_standard_stars"
+    flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 10
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 0
+    }
+
+    change_orbit = 45
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_I"
+        orbit_angle = -30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_I"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 2 max = 10 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+
+	planet = {
+		class = pc_rare_crystal_asteroid
+		orbit_distance = { min = 0 max = 1 }
+		orbit_angle = { min = 10 max = 36 }
+		size = { min = 1 max = @asteroid_min_size }
+
+		init_effect = {
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = 0
+				}
+			}
+			random_list = {
+                 15 = {
+                     add_deposit = d_volatile_motes_1
+                 }
+                 15 = {
+                     add_deposit = d_exotic_gases_1
+                 }
+                 15 = {
+                     add_deposit = d_exotic_gases_2
+                 }
+                 15 = {
+                     add_deposit = d_volatile_motes_2
+                 }
+                 20 = {
+                     add_deposit = d_rare_crystals_3
+                 }
+                 10 = {
+                     add_deposit = d_rare_crystals_2
+                 }
+                 10 = {
+                     add_deposit = d_rare_crystals_1
+                 }
+                 1 = { add_deposit = d_living_metal_deposit  }
+                 1 = { add_deposit = d_zro_deposit_1 }
+             }
+		}
+
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 2
+alicemod_basic_init_02 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+	usage = misc_system_init
+	usage_odds = 20
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 30
+
+	planet = {
+		count = 2
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 25
+
+	planet = {
+		count = { min = 1 max = 4 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 2 max = 5 }
+		orbit_distance = 25
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 2
+alicemod_basic_init_02_ringworld = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+	usage = misc_system_init
+	usage_odds = 10
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 0
+    }
+
+    change_orbit = 45
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_I"
+        orbit_angle = -30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_I"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_II"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_tech"
+        name = "NAME_Circuit_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_seam"
+        name = "NAME_Superstructure_III"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+    planet = {
+        class = "pc_ringworld_habitable"
+        orbit_angle = 30
+        orbit_distance = 0
+    }
+
+	change_orbit = 30
+
+	planet = {
+		count = 2
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 25
+
+	planet = {
+		count = { min = 1 max = 4 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 2 max = 5 }
+		orbit_distance = 25
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 3
+alicemod_basic_init_03 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 10
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+    change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+	change_orbit = 45
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = 10
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = 60
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 4 }
+			size = { min = 8 max = 20 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 6
+		}
+	}
+
+	change_orbit = 20
+
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 4
+alicemod_basic_init_04 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 165
+	}
+
+	usage = misc_system_init
+	usage_odds = 10
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 120
+
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = -80
+
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 80
+
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 5
+alicemod_basic_init_05 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 130
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 240
+	}
+
+	usage = misc_system_init
+	usage_odds = 6
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 85
+
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 70 max = 120 }
+	}
+
+	change_orbit = 110
+
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 70 max = 120 } #{ min = 90 max = 270 }
+	}
+
+	change_orbit = -210
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Basic 6
+alicemod_basic_init_06 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 130
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 240
+	}
+
+	usage = misc_system_init
+	usage_odds = 4
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 85
+
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 70 max = 120 }
+	}
+
+	change_orbit = 110
+
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 70 max = 120 } #{ min = 90 max = 270 }
+	}
+
+	change_orbit = -210
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 2 max = 2 }
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Asteroid System
+alicemod_asteroid_init_01 = {
+	class = "rl_standard_stars"
+	flags = { ring_world_built abandoned_gateway }
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 60
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 120
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 180
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 240
+	}
+
+	usage = misc_system_init
+	usage_odds = 12
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 15
+
+	planet = {
+		count = { min = 1 max = 2 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 60
+
+	planet = {
+		count = { min = 2 max = 3 }
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 60
+
+	planet = {
+		count = { min = 3 max = 4 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 60
+
+	planet = {
+		count = { min = 4 max = 5 }
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Binary 1
+alicemod_binary_init_01 = {
+	class = "rl_binary_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 6
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 25
+		orbit_angle = 0
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 2 max = 10 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Binary 2
+alicemod_binary_init_02 = {
+	class = "rl_binary_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 4
+
+	#inner_radius_offset = 200
+	#outer_radius_offset = 220
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 30 max = 35 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 240
+		orbit_angle = { min = 0 max = 360 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		satellite_naming_policy = upper_case_roman_numerals
+
+		change_orbit = 25
+
+		 planet = {
+			count = { min = 2 max = 3 }
+			class = rl_unhabitable_planets
+			size = { min = 14 max = 24 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 25
+			satellite_naming_policy = lower_case_latin_letters
+
+			change_orbit = @base_moon_distance
+
+			moon = {
+				count = { min = 0 max = 1 }
+				orbit_angle = { min = 90 max = 270 }
+				orbit_distance = 3
+			}
+		}
+	}
+
+	change_orbit = -195
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+    change_orbit = 20
+
+	planet = {
+		count = { min = 3 max = 5 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 3
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Trinary 1
+alicemod_trinary_init_01 = {
+	class = "rl_trinary_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 3
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 25
+		orbit_angle = 0
+		size = { min = 25 max = 30 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = { min = 0 max = 20 }
+		orbit_angle = 120
+		size = { min = 25 max = 30 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = { min = 0 max = 20 }
+		orbit_angle = 120
+		size = { min = 25 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 20
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 2 max = 10 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
+
+# Trinary 2
+alicemod_trinary_init_02 = {
+	class = "rl_trinary_stars"
+	flags = { ring_world_built abandoned_gateway }
+
+	usage = misc_system_init
+	usage_odds = 3
+
+	#inner_radius_offset = 200
+	#outer_radius_offset = 220
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 30 max = 35 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 220
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 20 max = 30 }
+		has_ring = no
+		satellite_naming_policy = upper_case_roman_numerals
+
+		change_orbit = 30
+
+		planet = {
+			count = { min = 2 max = 4 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 25
+			satellite_naming_policy = lower_case_latin_letters
+
+			change_orbit = @base_moon_distance
+
+			moon = {
+				count = { min = 0 max = 1 }
+				orbit_angle = { min = 90 max = 270 }
+				orbit_distance = 3
+			}
+		}
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+		satellite_naming_policy = upper_case_roman_numerals
+
+		change_orbit = 25
+
+		planet = {
+			count = { min = 1 max = 4 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 25
+			satellite_naming_policy = lower_case_latin_letters
+
+			change_orbit = @base_moon_distance
+
+			moon = {
+				count = { min = 0 max = 1 }
+				orbit_angle = { min = 90 max = 270 }
+				orbit_distance = 3
+			}
+		}
+	}
+
+	change_orbit = -175
+
+    init_effect = {
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 0
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 90
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 180
+            orbit_distance = 45
+        }
+        spawn_megastructure = {
+            type = "ring_world_ruined"
+            orbit_angle = 270
+            orbit_distance = 45
+        }
+    }
+
+	planet = {
+		count = { min = 3 max = 4 }
+		orbit_distance = 15
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 3
+		}
+	}
+
+	init_effect = {
+        spawn_megastructure = {
+            type = "gateway_ruined"
+            random_pos = yes
+            orbit_angle = 360		# range of the randomization
+        }
+    }
+}
