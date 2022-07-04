@@ -1,5 +1,22 @@
+#############################
+#
+# Custom Starting Systems #
+#
+#############################
 
+@distance = 50
+@jumps = 3
+@planet_min_size = 10
+@planet_max_size = 25
 @base_moon_distance = 10
+@moon_min_size = 6
+@moon_max_size = 10
+@homeworld_min_size = 18
+@homeworld_max_size = 21
+@asteroid_min_size = 2
+@asteroid_max_size = 4
+@frozen_world_min_size = 9
+@frozen_world_max_size = 20
 
 # Basic 1
 hyperrelay_alicemod_basic_init_01 = {
@@ -1528,9 +1545,6 @@ hyperrelay_alicemod_trinary_init_02 = {
         }
     }
 }
-
-
-@base_moon_distance = 10
 
 # Basic 1
 alicemod_basic_init_01 = {
