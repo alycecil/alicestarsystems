@@ -22,7 +22,7 @@
 ######################################################################## alicemod_side_sr1_common ###################
 
 alicemod_side_sr1_common_misc = {
-	class = "sc_black_hole_alicemod_xl_start"
+	class = "sc_black_hole_deadly_alicemod_xl"
 
 	usage = misc_system_init
 	usage_odds = 10
@@ -788,7 +788,7 @@ alicemod_side_sr1_neighbor_common_misc = {
 ######################################################################## alicemod_side_sr2_common ###################
 
 alicemod_side_sr2_common_misc = {
-	class = "sc_black_hole_alicemod_xl_start"
+	class = "sc_black_hole_deadly_alicemod_xl"
 
 	usage = misc_system_init
 	usage_odds = 10
