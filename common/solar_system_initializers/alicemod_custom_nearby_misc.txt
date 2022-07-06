@@ -470,7 +470,6 @@ alicemod_side_sr1_neighbor_common_misc = {
         }
 
         init_effect = {
-            add_deposit = d_alicemod_farm_infra
             add_deposit = d_marvelous_oasis
             add_deposit = d_teeming_reef
             add_deposit = d_black_soil
@@ -533,7 +532,6 @@ alicemod_side_sr1_neighbor_common_misc = {
         }
 
         init_effect = {
-            add_deposit = d_alicemod_farm_infra
             add_deposit = d_marvelous_oasis
             add_deposit = d_teeming_reef
             add_deposit = d_black_soil
@@ -596,7 +594,6 @@ alicemod_side_sr1_neighbor_common_misc = {
         }
 
         init_effect = {
-            add_deposit = d_alicemod_farm_infra
             add_deposit = d_marvelous_oasis
             add_deposit = d_teeming_reef
             add_deposit = d_black_soil
