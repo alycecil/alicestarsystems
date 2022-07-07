@@ -2796,7 +2796,7 @@ alicemod_trinary_init_01 = {
 	planet = {
 		count = 1
 		class = star
-		orbit_distance = 25
+		orbit_distance = 15
 		orbit_angle = 0
 		size = { min = 25 max = 30 }
 		has_ring = no
@@ -2805,7 +2805,7 @@ alicemod_trinary_init_01 = {
 	planet = {
 		count = 1
 		class = star
-		orbit_distance = { min = 0 max = 20 }
+		orbit_distance = { min = 0 max = 5 }
 		orbit_angle = 120
 		size = { min = 25 max = 30 }
 		has_ring = no
@@ -2814,7 +2814,7 @@ alicemod_trinary_init_01 = {
 	planet = {
 		count = 1
 		class = star
-		orbit_distance = { min = 0 max = 20 }
+		orbit_distance = { min = 0 max = 5 }
 		orbit_angle = 120
 		size = { min = 25 max = 30 }
 		has_ring = no
