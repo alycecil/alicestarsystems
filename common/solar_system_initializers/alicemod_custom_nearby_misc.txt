@@ -93,7 +93,7 @@ alicemod_side_sr1_common_misc = {
         count = 10
         class = pc_rare_crystal_asteroid
         orbit_distance = { min = 0 max = 1 }
-        orbit_angle = { min = 10 max = 36 }
+        orbit_angle = { min = 10 max = 51 }
         size = { min = @asteroid_min_size max = @asteroid_max_size }
 
         init_effect = {
@@ -249,7 +249,7 @@ alicemod_side_sr1_common_misc = {
         count = 3
         class = pc_ice_asteroid
         orbit_distance = { min = 0 max = 1 }
-        orbit_angle = { min = 10 max = 36 }
+        orbit_angle = { min = 10 max = 51 }
         size = { min = @asteroid_min_size max = @asteroid_max_size }
 
         init_effect = {
@@ -273,7 +273,7 @@ alicemod_side_sr1_common_misc = {
 		count = 3
 		class = pc_rare_crystal_asteroid
 		orbit_distance = { min = 0 max = 1 }
-		orbit_angle = { min = 10 max = 36 }
+		orbit_angle = { min = 10 max = 51 }
 		size = { min = 1 max = @asteroid_min_size }
 
 		init_effect = {
@@ -321,7 +321,7 @@ alicemod_side_sr1_common_misc = {
         count = 3
         class = pc_asteroid
         orbit_distance = { min = 0 max = 1 }
-        orbit_angle = { min = 10 max = 36 }
+        orbit_angle = { min = 10 max = 51 }
         size = { min = @asteroid_min_size max = @asteroid_max_size }
 
         init_effect = {
@@ -349,7 +349,7 @@ alicemod_side_sr1_common_misc = {
         count = 1
         class = pc_rare_crystal_asteroid
         orbit_distance = { min = 0 max = 1 }
-        orbit_angle = { min = 10 max = 36 }
+        orbit_angle = { min = 10 max = 51 }
         size = { min = 1 max = @asteroid_min_size }
 
         init_effect = {
@@ -641,7 +641,7 @@ alicemod_side_sr1_neighbor_common_misc = {
         count = { min = 3 max = 10 }
         class = pc_asteroid
         orbit_distance = { min = 0 max = 1 }
-        orbit_angle = { min = 10 max = 36 }
+        orbit_angle = { min = 10 max = 51 }
         size = { min = @asteroid_min_size max = @asteroid_max_size }
 
         init_effect = {
@@ -669,7 +669,7 @@ alicemod_side_sr1_neighbor_common_misc = {
         count = 1
         class = pc_rare_crystal_asteroid
         orbit_distance = { min = 0 max = 1 }
-        orbit_angle = { min = 10 max = 36 }
+        orbit_angle = { min = 10 max = 51 }
         size = { min = 1 max = @asteroid_min_size }
 
         init_effect = {
@@ -719,7 +719,7 @@ alicemod_side_sr1_neighbor_common_misc = {
         count = 1
         class = pc_rare_crystal_asteroid
         orbit_distance = { min = 0 max = 1 }
-        orbit_angle = { min = 10 max = 36 }
+        orbit_angle = { min = 10 max = 51 }
         size = { min = 1 max = @asteroid_min_size }
 
         init_effect = {
@@ -838,7 +838,7 @@ alicemod_side_sr2_common_misc = {
         count = { min = 3 max = 10 }
         class = pc_asteroid
         orbit_distance = { min = 0 max = 1 }
-        orbit_angle = { min = 10 max = 36 }
+        orbit_angle = { min = 10 max = 51 }
         size = { min = @asteroid_min_size max = @asteroid_max_size }
 
         init_effect = {
@@ -860,7 +860,7 @@ alicemod_side_sr2_common_misc = {
         count = 1
         class = pc_rare_crystal_asteroid
         orbit_distance = { min = 0 max = 1 }
-        orbit_angle = { min = 10 max = 36 }
+        orbit_angle = { min = 10 max = 51 }
         size = { min = 1 max = @asteroid_min_size }
 
         init_effect = {

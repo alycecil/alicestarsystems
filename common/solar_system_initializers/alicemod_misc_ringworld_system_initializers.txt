@@ -308,7 +308,7 @@ hyperrelay_alicemod_basic_init_01_ringworld_alt = {
 	planet = {
 		class = pc_rare_crystal_asteroid
 		orbit_distance = { min = 0 max = 1 }
-		orbit_angle = { min = 10 max = 36 }
+		orbit_angle = { min = 10 max = 51 }
 		size = { min = 1 max = @asteroid_min_size }
 
 		init_effect = {
@@ -1824,7 +1824,7 @@ alicemod_basic_init_01_ringworld_alt = {
 	planet = {
 		class = pc_rare_crystal_asteroid
 		orbit_distance = { min = 0 max = 1 }
-		orbit_angle = { min = 10 max = 36 }
+		orbit_angle = { min = 10 max = 51 }
 		size = { min = 1 max = @asteroid_min_size }
 
 		init_effect = {
