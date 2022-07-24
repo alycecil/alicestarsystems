@@ -52,7 +52,7 @@ sc_trinary_2_alicemod_xl_ultra = { # Trinary System
 sc_black_hole_deadly_alicemod_xl = {
 	class			= black_hole
 	icon				= a_trinary_star
-	icon_scale		= 4.0
+	icon_scale		= 2.5
 	planet			= { key = pc_black_hole }
 	planet			= {
 		key = pc_neutron_star
