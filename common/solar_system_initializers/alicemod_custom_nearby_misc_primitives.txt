@@ -21,7 +21,7 @@
 
 ######################################################################## alicemod_side_sr1_common ###################
 
-alicemod_side_sr1_common_misc = {
+alicemod_side_sr1_common_misc_primitives = {
 	class = "sc_black_hole_deadly_alicemod_xl"
 
 	usage = misc_system_init
@@ -134,6 +134,10 @@ alicemod_side_sr1_common_misc = {
 		class = pc_nuked
 		orbit_angle = { min = 170 max = 190 }
 		change_orbit = @base_moon_distance
+
+        init_effect = {
+            generate_very_early_primitives_on_planet = yes
+        }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -396,13 +400,13 @@ alicemod_side_sr1_common_misc = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = 3 }
-		initializer = "alicemod_side_sr1_neighbor_common_misc"
+		initializer = "alicemod_side_sr1_beta_neighbor_common_misc"
 	}
 }
 
 ######################################################################## alicemod_side_sr1_neighbor_common ###################
 
-alicemod_side_sr1_neighbor_common_misc = {
+alicemod_side_sr1_beta_neighbor_common_misc = {
     class = "sc_g"
 
 	usage = misc_system_init
@@ -458,6 +462,10 @@ alicemod_side_sr1_neighbor_common_misc = {
 		init_effect = {
 		    save_event_target_as = alicemod_gaia_ruined_orbital_ring_planet
 		}
+
+        init_effect = {
+            generate_late_primitives_on_planet = yes
+        }
 
 		change_orbit = @base_moon_distance
 
@@ -532,6 +540,10 @@ alicemod_side_sr1_neighbor_common_misc = {
         }
 
         init_effect = {
+            generate_late_primitives_on_planet = yes
+        }
+
+        init_effect = {
             add_deposit = d_marvelous_oasis
             add_deposit = d_teeming_reef
             add_deposit = d_black_soil
@@ -584,6 +596,10 @@ alicemod_side_sr1_neighbor_common_misc = {
         }
 
         change_orbit = @base_moon_distance
+
+        init_effect = {
+            generate_primitives_on_planet = yes
+        }
 
         moon = {
             count = { min = 0 max = 5 }
@@ -784,7 +800,7 @@ alicemod_side_sr1_neighbor_common_misc = {
 
 ######################################################################## alicemod_side_sr2_common ###################
 
-alicemod_side_sr2_common_misc = {
+alicemod_side_sr2_common_misc_beta = {
 	class = "sc_black_hole_deadly_alicemod_xl"
 
 	usage = misc_system_init
@@ -919,6 +935,10 @@ alicemod_side_sr2_common_misc = {
 		    save_event_target_as = alicemod_ruined_orbital_ring_planet
 		}
 
+        init_effect = {
+            generate_primitives_on_planet = yes
+        }
+
 		moon = {
 			count = { min = 0 max = 5 }
 			orbit_angle = { min = 90 max = 270 }
@@ -972,6 +992,10 @@ alicemod_side_sr2_common_misc = {
             save_event_target_as = alicemod_ruined_orbital_ring_planet2
         }
 
+        init_effect = {
+            generate_primitives_on_planet = yes
+        }
+
         moon = {
             count = { min = 0 max = 5 }
             orbit_angle = { min = 90 max = 270 }
@@ -1023,6 +1047,10 @@ alicemod_side_sr2_common_misc = {
 
         init_effect = {
             save_event_target_as = alicemod_ruined_orbital_ring_planet3
+        }
+
+        init_effect = {
+            generate_primitives_on_planet = yes
         }
 
         moon = {
